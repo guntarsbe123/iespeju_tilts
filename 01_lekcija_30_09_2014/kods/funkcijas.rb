@@ -4,7 +4,7 @@
 jana_abolu_daudzums = 5
 
 if jana_abolu_daudzums > 5
-	puts "janims ir daudz"
+	puts "pieteik lasīt"
 elsif jana_abolu_daudzums == 5
 	puts "janim ir 5"
 else
@@ -27,8 +27,11 @@ puts "vai_tas_ir_patiess = "+vai_tas_ir_patiess.to_s
 
 #funkcijas
 def laukuma_aprekinasana viena_mala, otra_mala
+	# funkcijas nosaukums ir laukuma_aprekinasana
+	# tai būs nepieciešams padot divus mainigos
+	# pirmajam mainīgajam ko padosiet būs nosaukums "viena_mala", otrajam "otra_mala"
 	laukums = viena_mala*otra_mala
-	return laukums
+	return laukums # ko atgriezt funkcijas rezultātam
 end
 
 laukums = laukuma_aprekinasana 5, 6
@@ -68,3 +71,12 @@ end
 puts "pirmais taisnsturis: "+visas_formulas(5, 4)
 puts "otrais taisnsturis: "+visas_formulas(6, 9)
 puts "trsais taisnsturis: "+visas_formulas(7, 1)
+
+# mainigie
+jana_abolu_daudzums = 0 # janim no sakuma nav abolu
+
+while jana_abolu_daudzums < 5 # kamer janim abolu daudzums ir mazaks pa pieci
+	puts "jālasa vēl" # pasakam jānim, ka jālasa vēl
+	jana_abolu_daudzums = jana_abolu_daudzums + 1 # pieliekam janim pie abolu daudzuma vēl vienu
+end
+puts "pietiek lasīt" # pasakam jānim, ka viņam ir pieci un pietiks lasīt

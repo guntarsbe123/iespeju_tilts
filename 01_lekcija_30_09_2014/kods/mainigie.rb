@@ -23,3 +23,8 @@ decimal = integer.to_f
 
 #lai kaut ko izvadītu - puts
 puts string
+
+puts "izvadāmais teksts" # izvadīs - izvadāmais teksts
+a = 55 # ja nepieciešams varam izvadīt arī mainīgo rezultātus
+puts a # izvadīs - izvadāmais mainīgais
+puts "rezultāts: "+a.to_s #izvadīs - rezultāts: 55
