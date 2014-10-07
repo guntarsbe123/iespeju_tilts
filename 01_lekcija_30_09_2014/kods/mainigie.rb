@@ -13,7 +13,7 @@ boolean = true
 boolean = false
 
 #pārvērst uz string
-string = integer.to_s"perimetrs ir "
+string = integer.to_s
 
 #pārvērst uz integer
 integer = decimal.to_i
