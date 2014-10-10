@@ -8,3 +8,29 @@ puts "pusperimetrs ir "+pusperimetrs.round(1).to_s
 laukums=Math.sqrt(pusperimetrs*(pusperimetrs-mala_ab)*(pusperimetrs-mala_bc)*(pusperimetrs-mala_ac))
 puts "laukums ir "+laukums.round(1).to_s
 
+#kur ir problēma ka man parāda p=13.0 nevis p=13,5
+
+
+
+skolas_zurnals = [{:vards => "Jānis", :uzvards => "Bērziņš", :atzime => 7},
+				  {:vards => "Pēteris", :uzvards => "Lauciņš", :atzime => 5},
+				  {:vards => "Edgars", :uzvards => "Kalniņš", :atzime => 10},
+				  {:vards => "Ziedonis", :uzvards => "Rasma", :atzime => 9},
+				  {:vards => "Jana", :uzvards => "Jansone", :atzime => 2}]
+
+kopeja_atzime = 0
+
+skolas_zurnals.each do |zurnals|
+	zurnals[:atzime] = zurnals[:atzime]
+end
+
+skolas_zurnals.each do |zurnals|
+	kopeja_atzime = kopeja_atzime+zurnals[:atzime]
+end
+
+puts "kopeja atzime ir "+kopeja_atzime.to_s
+
+videja_atzime=kopeja_atzime/5
+puts "videja atzime ir "+videja_atzime.round(1).to_s
+
+šeit tā pati šaize vidējā atzīme=6.0 nevis 6,6
