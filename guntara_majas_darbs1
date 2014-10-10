@@ -1,0 +1,10 @@
+mala_ab=8
+mala_bc=10
+mala_ac=9
+
+pusperimetrs=(mala_ab+mala_bc+mala_ac)/2
+puts "pusperimetrs ir "+pusperimetrs.round(1).to_s
+
+laukums=Math.sqrt(pusperimetrs*(pusperimetrs-mala_ab)*(pusperimetrs-mala_bc)*(pusperimetrs-mala_ac))
+puts "laukums ir "+laukums.round(1).to_s
+
